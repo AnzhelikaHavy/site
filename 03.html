@@ -1,0 +1,210 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- 
+		
+			http://jquery.com/	
+			http://htmlbook.ru/html/ 
+			http://host42.itelit.pro/moto/index.html
+			http://host42.itelit.pro/moto/js/my.js
+			http://host42.itelit.pro/moto/js/all.js
+			http://host42.itelit.pro/moto/js/my-ui.js
+			<script type="text/javascript" 	src="js/jquery-ui.min.js"></script>
+		-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=windows-1251" />
+		<title>Курс по Javascript</title>
+		
+		<link href="css/mystyle.css" rel="stylesheet" type="text/css" />
+		<link  rel="stylesheet" type="text/css" href="css/jquery-ui.css"/>
+		<script type="text/javascript" 	src="js/jquery.js"></script>
+		
+		<script type="text/javascript" 	src="js/jquery-ui.js"></script>
+		<script type="text/javascript" src="js/my.js"></script>
+		<script type="text/javascript" src="js/all.js"></script>
+        <script type="text/javascript" src="js/my-ui.js"></script>
+	</head>
+	<body>
+		<!-- Общий div для всей в -->
+		<div class="maindiv" id="main_div">
+			<!-- Блок хедера (шапка сайта) -->
+			<div id="forheader">
+				<img src="images/logo.jpg" width="900" height="108" alt="Хедер" title="Шапка сайта" />
+			</div>
+			<!-- Конец блока хедера -->
+			
+			<!-- Меню-->
+			<ul id="topnav">
+			<li><a href="01.html">Головна</a></li>
+			<li><a href="02.html">Асортимент</a></li>	
+			<li><a href="03.html">Вартість</a></li>
+			<li><a href="04.html">Роспродаж</a></li>
+			<li><a href="05.html">Допомога</a></li>
+			</ul>
+			<!-- Конец меню -->
+			
+			<div id="forbody">
+			<h1 id="fio">Вартість </h1>
+				
+				 <h3>Розрахунок вартості проката книги:</h3>
+						 
+				 
+				<!-- Форма -->
+				<form action="form.php" id="my_form">
+					<div id="bigform">
+						<fieldset>
+							<!-- Правый блок формы -->
+							<div id="div_form_1">
+								<fieldset id="innerfieldset">
+									<legend>Додаткові опції</legend>
+									<p><strong>Потрібні закладки: </strong></p>
+									<div id="format">
+										<input type="checkbox" value="sh" name="dop_oprions" id="shlem" />
+										<label for="shlem">Стрічка</label>
+										<input type="checkbox" value="bag" name="dop_oprions" id="bag"  />
+										<label for="bag">Картонна</label>
+										<input type="checkbox" value="od" name="dop_oprions" id="od" />
+										<label for="od">Пластмасова</label>
+									</div>
+									<p>
+									<img src="images/help.png" width="16" height="16" id="help">
+									<strong>Потрыбна страховка?</strong>
+									</p>
+									<div id="dialog" title="Basic dialog">
+                                      <p>Якщо ви пошкодите книгу під час користування, страхова компаннія відшкодує пошкодження.</p>
+                                     </div>
+									 
+									<div id="radio">
+										<input type="radio" id="inch_yes" value="yes" name="inch" />
+										<label for="inch">Так</label>
+										<input type="radio" id="inch_no" value="no" name="inch" />
+										<label for="inch">Ні</label>
+									</div>
+								</fieldset>
+								
+								<!-- опрос -->
+									<fieldset id="innerfieldset2">
+									 <legend>Опитування претендента</legend>
+									  <div id="opros">
+										<div id="radio1">
+										<p><strong>Ви встигнете прочитати книгу за тиждень?</strong></p>
+										 <input type="radio" id="pr1" value="yes" name="pr1" />
+											<label for="pr1">Так</label>
+											<input type="radio" id="pr2" value="no" name="pr1" />
+											<label for="pr2">Ні</label>
+											</div>
+											<div id="radio2">
+										<p><strong>Ви купували у нас книги раніше?</strong></p>
+										 <input type="radio" id="pr3" value="yes" name="pr2" />
+											<label for="pr3">Так</label>
+											<input type="radio" id="pr4" value="no" name="pr2" />
+											<label for="pr4">Ні</label>
+											</div>
+											<div id="radio3">
+										<p><strong>Вам є 16?</strong></p>
+										 <input type="radio" id="pr5" value="yes" name="pr3" />
+											<label for="pr5">Так</label>
+											<input type="radio" id="pr6" value="no" name="pr3" />
+											<label for="pr6">Ні</label>
+											</div>
+											<div id="radio4">
+										<p><strong>Ви брали на тим часове користування у нас книги раніше?</strong></p>
+										 <input type="radio" id="pr7" value="yes" name="pr4" />
+											<label for="pr7">Так</label>
+											<input type="radio" id="pr8" value="no" name="pr4" />
+											<label for="pr8">Ні</label>
+											</div>
+											<div id="radio5">
+										<p><strong>Чи подобається вам обслуговування?</strong></p>
+										 <input type="radio" id="pr9" value="yes" name="pr5" />
+											<label for="pr9">Так</label>
+											<input type="radio" id="pr10" value="no" name="pr5" />
+											<label for="pr10">Ні</label>
+											</div>
+											<!--
+											<div id="radio6">
+											<p><strong>У вас есть проблемы с психическим здоровьем?</strong></p>
+										 <input type="radio" id="pr11" value="yes" name="pr6" />
+											<label for="pr11">Да</label>
+											<input type="radio" id="pr12" value="no" name="pr6" />
+											<label for="pr12">Нет</label>
+											</div>
+											<div id="radio7">
+											<p><strong>Вы умеете ремонтировать не серьезные повреждения?</strong></p>
+										 <input type="radio" id="pr13" value="yes" name="pr7" />
+											<label for="pr13">Да</label>
+											<input type="radio" id="pr14" value="no" name="pr7" />
+											<label for="pr14">Нет</label>
+											</div>
+											-->
+											<!--progressbar -->
+											<p id="answerCount">Данно відповідей 0 </p>
+											<div id="progressbar"></div>
+											</div>
+											</fieldset>
+											
+											<!--<input type="submit" value="Отправить заявку" id="my_button" />
+											-->
+											
+										   </div>
+							   <!-- Левый блок формы --> 
+							<div id="div_form_2">
+								<span>Книга:</span>
+								<select name="moto" size="1" id="motoSelect">
+									<option value="1">Зелена миля(3 грн в день)</option>
+									<option value="2">Сяйво(3 грн в день)</option>
+									<option value="3">Керрі(3 грн в день)</option>
+									<option value="4">Аутсайдер(3 грн в день)</option>
+									<option value="5">Кінець зміни(3 грн в день)</option>
+								</select>
+								<span>Тижнів:</span>
+								<select name="days" size="1" id="daysSelect">
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+								</select>
+								<p><strong>Вкажіть Ваш email:</strong></p>
+								<input type="text" id="email" value="Приклад: you@site.ru" /> 
+								
+								<p><strong>Вкажіть дату:</strong></p>
+								<input type="text" id="date" />
+								
+								<!----cols="45" rows="12"------>
+								<p><strong>Ваші побажання:</strong></p>
+								<textarea  id="mytextarea"></textarea>
+								
+								<!----slider------>
+								<p><strong>Скільки днів ви плануєте читати книгу?</strong></p>
+								<p>
+                                 <label for="amount">Скільки днів:</label>
+                                 <input type="text" id="amount" readonly style="border:0; color:#000000; font-weight:bold;">
+                                </p>
+ 
+                               <div id="slider-range"></div>
+							   
+							  <!--Autocomplete - поле с автозаполнением-->
+							  <p><strong>Якщо плануєте взяти книгу з собою то в яку область?</strong></p>
+							  <input id="tags">
+								
+								</div>
+								<!--Отправить заявку-->
+								<div id="for_button">
+								<input type="submit" value="Відправити заяву" id="my_button" />
+								</div>
+								
+								
+						</fieldset>
+					</div>
+				</form>
+				<!-- Конец формы -->
+				
+			</div>
+			<!-- Блок футера -->
+			<div id="forfooter">
+				<img src="images/footer.jpg" width="900" height="67" alt="Футер" title="Производители" />
+			</div>
+			<!-- Конец футера -->
+		</div>
+	</body>
+</html>

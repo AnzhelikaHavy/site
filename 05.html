@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- 
+		
+			http://jquery.com/	
+			http://htmlbook.ru/html/ 
+			http://host42.itelit.pro/moto/index.html
+			http://host42.itelit.pro/moto/js/my.js
+			http://host42.itelit.pro/moto/js/all.js
+			http://host42.itelit.pro/moto/js/my-ui.js
+			<script type="text/javascript" 	src="js/jquery-ui.min.js"></script>
+		-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=windows-1251" />
+		<title>Курс по Javascript</title>
+		
+		<link href="css/mystyle.css" rel="stylesheet" type="text/css" />
+		<link  rel="stylesheet" type="text/css" href="css/jquery-ui.css"/>
+		<script type="text/javascript" 	src="js/jquery.js"></script>
+		
+		<script type="text/javascript" 	src="js/jquery-ui.js"></script>
+		<script type="text/javascript" src="js/my.js"></script>
+		<script type="text/javascript" src="js/all.js"></script>
+        <script type="text/javascript" src="js/my-ui.js"></script>
+	</head>
+	<body>
+		<!-- Общий div для всей в -->
+		<div class="maindiv" id="main_div">
+			<!-- Блок хедера (шапка сайта) -->
+			<div id="forheader">
+				<img src="images/logo.jpg" width="900" height="108" alt="Хедер" title="Шапка сайта" />
+			</div>
+			<!-- Конец блока хедера -->
+			
+			<!-- Меню-->
+			<ul id="topnav">
+			<li><a href="01.html">Головна</a></li>
+			<li><a href="02.html">Асортимент</a></li>	
+			<li><a href="03.html">Вартість</a></li>
+			<li><a href="04.html">Роспродаж</a></li>
+			<li><a href="05.html">Допомога</a></li>
+			</ul>
+			<!-- Конец меню -->
+			
+			<div id="forbody">
+			<h1 id="fio">Допомога</h1>
+				
+
+			<!--Сортируемые элементы --> 
+			<h3>Допомога у підборі книг:</h3>
+			<div id="helpDiv">
+				<p><strong>Відсортуйте важливі для вас якості у книзі:</strong></p>
+				<ul id="sortable">
+				<li class="ui-state-default">Не велика ціна</li>
+                <li class="ui-state-default">Від 100 до 800 сторінок</li>
+                <li class="ui-state-default">До 100 сторінок</li>
+                <li class="ui-state-default">Від 800 сторінок</li>
+                <li class="ui-state-default">Нові видання</li>
+                <li class="ui-state-default">Старі видання</li>
+                <li class="ui-state-default">Мовою оригіналу</li>
+				<li class="ui-state-default">Переклад</li>
+                </ul>
+				</div>
+				
+				<div id="helpColor">
+				<p><strong>Оберіть колір палітурки:</strong></p>
+				<ol id="selectable">
+				<li class="ui-state-default"><img src="images/color/red.jpg" width="220" height="148"> </li>
+                <li class="ui-state-default"><img src="images/color/green.jpg" width="220" height="148"></li>
+                <li class="ui-state-default"><img src="images/color/blk.jpg" width="220" height="148"></li>
+                <li class="ui-state-default"><img src="images/color/get.jpg" width="220" height="148"></li>
+				</ol>
+				</div>
+				
+				
+			</div>
+			<!-- Блок футера -->
+			<div id="forfooter">
+				<img src="images/footer.jpg" width="900" height="67" alt="Футер" title="Производители" />
+			</div>
+			<!-- Конец футера -->
+		</div>
+	</body>
+</html>
